@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* 기본적으로 레이아웃 작업을 할 때는
+        header, body, footer 세 부분으로 분할을 합니다.
+        header, footer는 그냥 한 부분으로 둬도 상관없지만
+        보통 요즘 많이 사용하는 레이아웃은
+        body쪽을 2~3분할 하기 때문에
+        이 점을 감안해서 float속성을 적절히 사용해주시고
+        float해제까지 해 주셔야 원하는 모양대로
+        사이트 구성이 됨에 유의해주세요.*/
+        * { margin:0; padding:0; }
+        body { width:550px; }
+        #header { border:2px dotted red; 
+                    height:100px;}
+        #body { border:2px solid blue; 
+                    height:300px;}
+        #footer { clear:both; border:2px dashed green; 
+                    height:100px;}
+        #body > div { display:inline-block;}
+        .sidebar { border:1px solid gray;
+                    width:200px; height:300px;
+                float:left;}
+        .content { border:1px solid gray;
+                    width:330px; height:300px;
+                float:right;}
+
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        div#header<br/>
+        헤더가 들어갈 자리입니다.<br/>
+        border:2px dotted red; 
+                height:100px;
+    </div>
+    <div id="body">
+        div#body<br/>
+        <div class="sidebar">
+            div.sidebar<br/>
+            사이드바 자리<br/>
+            border:1px solid gray;
+                width:200px; height:300px;
+        </div>
+        <div class="content">
+            div.content<br/>
+            컨텐츠 자리<br/>
+            border:1px solid gray;
+                width:330px; height:300px;
+        </div>
+    </div>
+    <div id="footer">
+        div#footer<br/>
+        푸터가 들어갈 자리입니다.<br/>
+        border:2px dashed green; 
+                height:100px;
+    </div>
+</body>
+</html>
