@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // 문제
+        // confirm과 조건문, location을 이용해서
+        // 현재 페이지를 보겠습니가? 라고 먼저 물어보고
+        // 확인을 누르면 BODY태그 내에 H1태그를 만들어써ㅓ
+    
+        var result = confirm ("현재 페이지를 보겠습니까?");
+        
+        if (result) {
+            document.write("<h1>네이버대신 여기로 왔습니다.<h1/>");
+        } else {
+            location.href = "https://www.naver.com";
+        }
+        // 선생님이 쓰신 것
+        if (!result) {
+            document.write("<h1>네이버대신 여기로 왔습니다.<h1/>");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
