@@ -10,21 +10,22 @@
 <body>
     <div class="container">
         <div class="row">
-            <h2 class="text-primary text-center"><strong>게시판 글 목록</strong></h2>
-            </hr>    
+            <h1 class="text-primary text-center"><strong>게시판 글 목록</strong></h1>
+            
         </div>
+        <hr>
         <div class="row">
             <table class="table table-bordered table-hover table-dark">
                 <thead>
-                 <tr>
-                   <th>글번호 </th>
-                   <th>제목</th>
-                   <th>글쓴이</th>
-                   <th>쓴날짜</th>
-                   <th>조회수</th>
-                 </tr>
-                 </thead>
-                 <tbody>
+                    <tr>
+                        <th>글번호 </th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>쓴날짜</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>1</td>
                         <td>부트스트랩 질문 </td>
@@ -49,36 +50,22 @@
                     <th>댓글</th>
                 </thead>
                 <tbody>
-                    <form role="form" class="form-inline">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div class="form-group">
-                                    <label for="Name">이름</label>
-                                    <input type="text" class="form-control" placeholder="이름">
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="form-group">
-                
-                                    <label for="emailaddress">이메일</label>
-                                    <input type="email" class="form-control" placeholder="이메일">
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-group">
-                                    <p></p>
-                                    <button type="submit"> 확인</button>
-                                </div>
-                            </div>
-                        </div>
-                
-                    </form>
+                   <td>방문자</td>
+                   <td>이 홈페이지 볼 거 없죠?</td>
                 </tbody>
             </table>
         </div>
         <div class="row">
-
+            <div class="col-md-2">
+                <input type="text" class="form-control" placeholder="댓글 아이디"> 
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" placeholder="댓글 내용을 입력해주세요.">
+            </div>
+            <div class="col-md-2">
+                <input type="submit" class="btn btn-success" value="댓글입력"> 
+                </div>
         </div>
-    </div>
+    </div><!--div.container-->
 </body>
 </html>
